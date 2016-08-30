@@ -5,20 +5,15 @@ class player35
 public static void main(String args[])
 {
 Scanner sc=new Scanner(System.in);
-StringBuffer sb=new StringBuffer();
-String a=sc.next();
-char[] ch=new char[a.length()];
-ch=a.toCharArray();
-for(int i=0;i<ch.length-1;i++)
+String s=sc.next();
+for(int i=0;i<s.length()-1;i++)
 {
-if(ch[i]==ch[i+1])
+System.out.print(s.charAt(i));
+if(s.charAt(i)==s.charAt(i+1))
 {
-sb.append("*");
+System.out.print("*");
 }
-else
-{
 }
-System.out.print(sb);
-}
+System.out.print(s.charAt(s.length()-1));
 }
 }
